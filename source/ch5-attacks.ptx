@@ -16,7 +16,7 @@
 						<title>MitM</title>
 
 						<figure xml:id="fig-mitm">
-						<caption></caption>
+						<caption>Man-in-the-Middle (MitM)</caption>
 						<image source="mitm.svg">
 							<shortdescription>Diagram illustrating a Man-in-the-Middle (MitM) attack where an attacker intercepts communication between a user and a web server.</shortdescription>
 							<description>
@@ -32,7 +32,7 @@
 					</p>
 
 						<figure xml:id="fig-mitm-keys">
-						<caption></caption>
+						<caption>Man-in-the-Middle Sequence of Communications</caption>
 						<image source="mitm-keys.svg">
 							<shortdescription>Diagram illustrating a Man-in-the-Middle (MitM) attack during a public key exchange, where the attacker substitutes their own public key.</shortdescription>
 							<description>
@@ -56,7 +56,7 @@
 					</p>
 
 						<figure xml:id="fig-mitb">
-						<caption></caption>
+						<caption> Man-in-the-Browser Attack</caption>
 						<image source="mitb.svg">
 							<shortdescription>Diagram illustrating a Man-in-the-Browser (MitB) attack where malware on a user's workstation alters a financial transaction without the user's knowledge.</shortdescription>
 							<description>
@@ -90,8 +90,8 @@
 						<title>SSL Circumvention</title>
 
 						<figure xml:id="fig-ssl-mitm">
-						<caption></caption>
-						<image source="ssl-mitm.svg">
+						<caption>SSL Circumvention Attack</caption>
+						<image source="ssl-mitm.svg" width="50%">
 							<shortdescription>Sequence diagram illustrating an SSL Man-in-the-Middle attack where an attacker intercepts communications, prevents an HTTPS upgrade for the victim, and captures plaintext credentials.</shortdescription>
 							<description>
 							<p>The diagram shows interactions between a "Victim," an "Attacker," and a "Server" to illustrate an SSL circumvention attack. The Victim initiates a connection by sending a "GET http://njit.edu" request, which is intercepted by the Attacker. The Attacker forwards this GET request to the Server. The Server responds with a "301 Moved" redirect, typically indicating a move to HTTPS. The Attacker receives this redirect but does not forward it to the Victim. Instead, the Attacker initiates its own "GET https://njit.edu" request to the Server, establishing a secure HTTPS connection. The Server responds to the Attacker with "200 OK (HTTPS)". The Attacker then sends a "200 OK (HTTP)" response back to the Victim, deceiving the Victim into believing they are communicating over a standard HTTP connection with the server and that no HTTPS upgrade occurred. Subsequently, the Victim sends their credentials, "POST http://njit.edu username=admin password=admin," over this unencrypted HTTP connection to the Attacker. The Attacker, having captured the plaintext credentials, can then forward this POST request, potentially over a secure HTTPS connection ("POST https://njit.edu username=admin password=admin"), to the legitimate Server. This allows the attacker to intercept sensitive information while the victim believes their session is normal, albeit unencrypted as presented by the attacker.</p>
@@ -138,7 +138,7 @@
 						<title>ARP Poisoning</title>
 						
 						<figure xml:id="fig-arp-spoofing">
-						<caption></caption>
+						<caption>ARP Spoofing</caption>
 						<image source="arp.svg">
 							<shortdescription>Diagram comparing network routing under normal operation with routing subject to ARP cache poisoning, where a malicious user intercepts traffic.</shortdescription>
 							<description>
@@ -165,7 +165,7 @@
 						<title>IP Spoofing</title>
 						
 						<figure xml:id="fig-ip-header">
-						<caption></caption>
+						<caption>IP Packet Header</caption>
 						<image source="ip-header.svg">
 							<shortdescription>Diagram illustrating the structure of an IP packet header, with fields humorously annotated to highlight the concept of IP spoofing.</shortdescription>
 							<description>
@@ -183,7 +183,7 @@
 							<title>Smurf Attack</title>
 
 							<figure xml:id="fig-smurf-attack">
-							<caption></caption>
+							<caption>Smurf Attack</caption>
 							<image source="smurf.png">
 								<shortdescription>Diagram illustrating a Smurf attack, where an attacker uses a broadcast network to flood a target with ICMP echo replies by spoofing the target's IP address.</shortdescription>
 								<description>
@@ -360,7 +360,7 @@
 						<title>SSRF</title>
 						
 						<figure xml:id="fig-ssrf-attack">
-						<caption></caption>
+						<caption>Server-Side Request Forgery (SSRF)</caption>
 						<image source="ssrf.svg">
 							<shortdescription>Diagram illustrating a Server-Side Request Forgery (SSRF) attack where an attacker tricks a web server into making requests to an internal network resource.</shortdescription>
 							<description>
@@ -538,7 +538,7 @@ $statement = "SELECT * FROM users WHERE name='" + $userName + "' AND password='"
 					</p>
 						
 						<figure xml:id="fig-privilege-escalation">
-						<caption></caption>
+						<caption>Privilege Escalation</caption>
 						<image source="escalation.svg">
 							<shortdescription>Diagram illustrating the concept of privilege escalation using steps of increasing height representing different user access levels.</shortdescription>
 							<description>
@@ -700,7 +700,7 @@ $statement = "SELECT * FROM users WHERE name='" + $userName + "' AND password='"
 					</p>
 					
 					<figure xml:id="fig-scapy-lab-setup">
-					<caption></caption>
+					<caption>MitM with Scapy Lab Set-up</caption>
 					<image source="scapy.svg">
 						<shortdescription>Illustration of three terminal windows representing a lab setup involving Docker Compose, a victim machine, and an attacker machine using Scapy.</shortdescription>
 						<description>
