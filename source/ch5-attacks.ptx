@@ -726,7 +726,7 @@ $statement = "SELECT * FROM users WHERE name='" + $userName + "' AND password='"
 					</p>
 
 					<p>
-					docker-compose up
+					<c>docker-compose up</c>
 				</p>
 					<pre>PS C:\Users\rxt1077\it230\labs\scapy&gt; docker-compose up
 Creating network "scapy_testnet" with the default driver
@@ -796,7 +796,7 @@ server_1    | Server listening on :: port 22.</pre>
 					</p>
 					
 					<p>
-					victim
+					<c>victim</c>
 				</p>
 					
 					<pre>PS C:\Users\rxt1077\it230\labs\scapy&gt; docker-compose run victim bash
@@ -832,7 +832,7 @@ bf9ebe42a108:~#</pre>
 					</p>
 					
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>PS C:\Users\rxt1077\it230\labs\scapy&gt; docker-compose exec attacker bash
@@ -874,7 +874,7 @@ root@5195de3d330c:/# ip addr
 					</p>
 					
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 					
 					<pre>root@5195de3d330c:/# scapy
@@ -908,11 +908,10 @@ AutoCompletion, History are disabled.
 					<p>
 					You’ll notice that scapy’s prompt is &gt;&gt;&gt;, just like python because it 
 						<em>is</em> python. Since we’re working in python, let’s make our lives easier by defining a few simple variables:
-				
 					</p>
 
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>&gt;&gt;&gt; server_ip = "172.20.0.5" (1)
@@ -932,7 +931,7 @@ AutoCompletion, History are disabled.
 				</p>
 
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>&gt;&gt;&gt; ping = Ether()/IP(dst=server_ip)/ICMP()/"Ryan Tolboom" (1)
@@ -1039,7 +1038,7 @@ Received 2 packets, got 1 answers, remaining 0 packets
 				</p>
 
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>&gt;&gt;&gt; whohas = Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=victim_ip)
@@ -1085,7 +1084,7 @@ Received 1 packets, got 1 answers, remaining 0 packets
 					We have everything we need to create an ARP packet telling the victim to send traffic to us when they are trying to access servers IP:
 				</p>
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>&gt;&gt;&gt; victim_ip, victim_mac, server_ip, server_mac
@@ -1096,7 +1095,7 @@ Received 1 packets, got 1 answers, remaining 0 packets
 				</p>
 
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>&gt;&gt;&gt; bad_arp = ARP(op=2, pdst=victim_ip, psrc=server_ip, hwdst=victim_mac)
@@ -1113,11 +1112,11 @@ Received 1 packets, got 1 answers, remaining 0 packets
 				</p>
 
 					<p>
-					attacker
+					<c>attacker</c>
 				</p>
 
 					<pre>
-						&gt;&gt;&gt; send(bad_arp)
+&gt;&gt;&gt; send(bad_arp)
 .
 Sent 1 packets.</pre>
 
@@ -1126,7 +1125,7 @@ Sent 1 packets.</pre>
 				</p>
 
 					<p>
-					victim
+					<c>victim</c>
 				</p>
 					<pre>You are now logged into 'server' (presumably from 'victim') via SSH for this assignment.
 Leave this connection open while you experiment with scapy from 'attacker'.
@@ -1151,7 +1150,7 @@ root@server's password:
 					</p>
 
 					<p>
-					docker-compose up terminal
+					<c>docker-compose up terminal</c>
 				</p>
 
 					<pre>attacker_1  | 2021/10/07 01:21:41 [172.20.0.6:60252] authentication for user "root" with password "password" accepted</pre>
