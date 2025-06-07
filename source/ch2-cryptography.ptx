@@ -745,6 +745,14 @@ Session completed</pre>
 					<c>john --show /etc/shadow</c>
                 </p>    
             </note>
+<exercise label = "fillin-karl-password" xml:id="fillin-karl-password">
+        <statement>
+<p>What is Karl's password? <var/></p></statement><setup><var>
+<condition string="test"><feedback><p>Right!</p></feedback></condition>
+<condition string="^\s*default\s*$"><feedback><p>Incorrect. Look for the output line that ends with <c>(karl)</c>. The first part of that line is Karl's password. Please try again.</p></feedback></condition></var></setup>
+</exercise> 
+
+
 					<p>
 					Given that the password is in the included common password wordlist, 
 						<c>/usr/share/john/password.lst</c>, you will quickly find that John the Ripper figures out karl’s password. John the Ripper can also run incrementally though all the possible character combinations, but it takes much longer. To help make these types of attacks more difficult, every hash in 
