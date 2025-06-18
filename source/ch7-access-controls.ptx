@@ -384,7 +384,7 @@
 						<p>
 						The owner and group of a file can be set with the 
 							<c>chown</c> command: 
-							<c>chown &lt;owner&gt;.&lt;group&gt; &lt;filename&gt;</c>. If 
+							<c>chown &lt;owner&gt;:&lt;group&gt; &lt;filename&gt;</c>. If 
 							<c>&lt;group&gt;</c> is not specified only the owner is changed.
 					
 						</p>
@@ -711,9 +711,9 @@ drwxr-xr-x 2 root root 4096 Oct 28 01:28 carol</pre>
 				
 					</p>
 
-					<pre>root@11ce9e5ee80e:/home# sudo chown alice.alice alice
-root@11ce9e5ee80e:/home# sudo chown bob.bob bob
-root@11ce9e5ee80e:/home# sudo chown carol.carol carol</pre>
+					<pre>root@11ce9e5ee80e:/home# sudo chown alice:alice alice
+root@11ce9e5ee80e:/home# sudo chown bob:bob bob
+root@11ce9e5ee80e:/home# sudo chown carol:carol carol</pre>
 
 					<p>
 					Now let’s view the permissions again by running 
