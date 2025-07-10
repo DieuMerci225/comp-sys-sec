@@ -704,45 +704,45 @@
 						<ol>
 							<li>
 								<p>
-								<idx>physical</idx>
-									<term>Physical</term>– Transfers raw bits over a physical medium (e.g., cables, radio waves).
+								<idx>physical layer</idx>
+									<term>Physical Layer</term> – Transfers raw bits over a physical medium (e.g., cables, radio waves).
 								</p>
 							</li>
 							<li>
 								<p>
-								<idx>data link</idx>
-									<term>Data Link</term>– Provides node-to-node data transfer and handles error correction from the physical layer.
+								<idx>data link layer</idx>
+									<term>Data Link Layer</term> – Provides node-to-node data transfer and handles error correction from the physical layer.
 								</p>
 							</li>
 							<li>
 								<p>
-								<idx>network</idx>
-									<term>Network</term>– Manages data routing, addressing, and packet forwarding across networks.
+								<idx>network layer</idx>
+									<term>Network Layer</term> – Manages data routing, addressing, and packet forwarding across networks.
 								</p>
 							</li>
 							<li>
 								<p>
-								<idx>transport</idx>
-									<term>Transport</term>– Ensures complete data transfer with error recovery and flow control.
+								<idx>transport layer</idx>
+									<term>Transport Layer</term> – Ensures complete data transfer with error recovery and flow control.
 								</p>
 							</li>
 							<li>
 								<p>
-								<idx>session</idx>
-									<term>Session</term>– Manages sessions between applications, maintaining state and synchronization.
+								<idx>session layer</idx>
+									<term>Session Layer</term> – Manages sessions between applications, maintaining state and synchronization.
 								</p>
 							</li>
 							<li>
 								<p>
-								<idx>presentation</idx>
-									<term>Presentation</term>– Transforms data into a format suitable for the application layer, handling encryption and
+								<idx>presentation layer</idx>
+									<term>Presentation Layer</term> – Transforms data into a format suitable for the application layer, handling encryption and
 									compression.
 								</p>
 							</li>
 							<li>
 								<p>
-								<idx>application</idx>
-									<term>Application</term>– Provides network services to end-user applications, such as web browsers and email clients.
+								<idx>application layer</idx>
+									<term>Application Layer</term> – Provides network services to end-user applications, such as web browsers and email clients.
 								</p>
 							</li>
 						</ol>
