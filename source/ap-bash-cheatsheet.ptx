@@ -7,9 +7,9 @@
   <title>Purpose of this Cheat Sheet</title>
   <p>
   </p>
-  <p>
-      The following is intended to be useful in better understanding bash shell commands as well as understanding commands that run programs in the bash shell and which are used in this book.
-      </p>
+<p>
+    This cheat sheet provides quick reference information for bash shell commands and security tools used throughout the labs in this textbook. Use it to look up command syntax, options, and practical examples while completing cybersecurity exercises.
+  </p>
       </paragraphs>
 <paragraphs>
 <title>Help Commands</title>
@@ -387,7 +387,26 @@ The <term>touch</term> command is commonly used for file creation. Its intended 
       </p>
     </li>
   </ul>
-</li>          
+</li>   
+
+          <li>
+            <title><c>cat &lt;file-name&gt;</c></title>
+            <p>
+              The <term>concatenate</term> prints file contents on the standard output after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.
+            <ul>
+              <li>
+                <p>
+                e.g. <c>cat file.txt</c> prints the contents of file.txt on the standard output.                </p>
+              </li>
+              <li>
+                <p>
+                e.g. <c>cat file1.txt file2.txt</c> prints the contents of the concatenation of file1.txt and file2.txt on the standard output.
+                </p>
+              </li>
+            </ul>
+          </p>
+          </li>
+
             <li>
               <title><c>echo &lt;text&gt;</c></title>
               <p>
@@ -414,23 +433,6 @@ The <term>touch</term> command is commonly used for file creation. Its intended 
             </p>
             </li>
  
-          <li>
-            <title><c>cat &lt;file-name&gt;</c></title>
-            <p>
-              The <term>concatenate</term> prints file contents on the standard output after concatenation. Note that with a single file, it just prints that file. It is often used with output redirection.
-            <ul>
-              <li>
-                <p>
-                e.g. <c>cat file.txt</c> prints the contents of file.txt on the standard output.                </p>
-              </li>
-              <li>
-                <p>
-                e.g. <c>cat file1.txt file2.txt</c> prints the contents of the concatenation of file1.txt and file2.txt on the standard output.
-                </p>
-              </li>
-            </ul>
-          </p>
-          </li>
 
 <li>
   <title><c>exit</c></title>
